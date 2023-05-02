@@ -8,7 +8,7 @@ Original file is located at
 """
 
 #https://blog.roboflow.com/how-to-use-segment-anything-model-sam/#:~:text=How%20to%20Use%20the%20Segment%20Anything%20Model%20%28SAM%29,Convert%20Object%20Detection%20Datasets%20into%20Segmentation%20Masks%20
-#Ativar GPUs
+#Activate GPUs
 !nvidia-smi
 
 import os
@@ -68,24 +68,7 @@ sv.plot_image(image=annotated_image)
 
 
 
-import numpy as np
 
-e=np.exp(1)
-e
-
-ts=[301.6,298.4,297.8]
-tm=[286.07,285.33]
-median=np.median(ts)
-
-a=e**ts[0]/(e**ts[0]+e**ts[1]+e**ts[2])
-b=e**ts[1]/(e**ts[0]+e**ts[1]+e**ts[2])
-c=e**ts[2]/(e**ts[0]+e**ts[1]+e**ts[2])
-
-vec=[a,b,c]
-vec=np.asarray(vec)
-vec
-
-sum(vec*tm[0])
 
 
 
