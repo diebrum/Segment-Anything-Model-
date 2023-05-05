@@ -58,6 +58,7 @@ result = mask_generator.generate(image_rgb)
 
 import supervision as sv
 
+
 mask_annotator = sv.MaskAnnotator()
 detections = sv.Detections.from_sam(result)
 annotated_image = mask_annotator.annotate(image_bgr, detections,opacity=1)
