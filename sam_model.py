@@ -10,6 +10,7 @@ Original file is located at
 #https://blog.roboflow.com/how-to-use-segment-anything-model-sam/#:~:text=How%20to%20Use%20the%20Segment%20Anything%20Model%20%28SAM%29,Convert%20Object%20Detection%20Datasets%20into%20Segmentation%20Masks%20
 #Activate GPUs
 
+
 !nvidia-smi
 
 import os
